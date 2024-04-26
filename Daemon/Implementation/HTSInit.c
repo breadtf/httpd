@@ -87,6 +87,7 @@ PUBLIC void HTFileInit NOARGS
     HTAddType(".shar",   "application/x-shar",		"8bit",   1.0);	/* Shell archive	*/
     HTAddType(".sv4cpio","application/x-sv4cpio",	"binary", 1.0);	/* SVR4 CPIO		*/
     HTAddType(".sv4crc", "application/x-sv4crc",	"binary", 1.0);	/* SVR4 CPIO with CRC	*/
+    HTAddType(".json",	 "application/json",		"8bit", 1.0);	/* JSON			*/
 
     /*
     ** The following are neutral CAE formats:
@@ -140,6 +141,7 @@ PUBLIC void HTFileInit NOARGS
     HTAddType(".tiff",   "image/tiff",			"binary", 1.0);
     HTAddType(".ras",    "image/cmu-raster",		"binary", 1.0);
     HTAddType(".png",    "image/png",			"binary", 1.0);	/* PNG image format	*/
+    HTAddType(".png",    "image/svg+xml",		"binary", 1.0);	/* SVG image format	*/
     HTAddType(".pnm",    "image/x-portable-anymap",	"binary", 1.0);	/* PBM Anymap format	*/
     HTAddType(".pbm",    "image/x-portable-bitmap",	"binary", 1.0);	/* PBM Bitmap format	*/
     HTAddType(".pgm",    "image/x-portable-graymap",	"binary", 1.0);	/* PBM Graymap format	*/
@@ -149,6 +151,8 @@ PUBLIC void HTFileInit NOARGS
     HTAddType(".xpm",    "image/x-xpixmap",		"binary", 1.0);	/* X pixmap format	*/
     HTAddType(".xwd",    "image/x-xwindowdump",		"binary", 1.0);	/* X window dump (xwd)	*/
     HTAddType(".html",   "text/html",			"8bit",   1.0);	/* HTML			*/
+    HTAddType(".js",     "text/javascript",		"8bit",   1.0);	/* JavaScript		*/
+    HTAddType(".css",    "text/css",			"8bit",   1.0);	/* CSS			*/
     HTAddType(".htm",    "text/html",			"8bit",   1.0);	/* HTML on PC's :-(	*/
     HTAddType(".htmls",	 "text/html",			"8bit",	  1.0);	/* Server-side includes	*/
     HTAddType(".c",      "text/plain",			"7bit",   0.5);	/* C source		*/

@@ -26,7 +26,7 @@ clobber: clean
 	rm -rf Library/linux/
 	rm -rf httpd/usr
 	rm -rf httpd/etc
-	rm httpd.deb
+	rm -f httpd.deb
 
 package: all
 	rm -rf httpd/usr

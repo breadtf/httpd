@@ -117,8 +117,10 @@ extern int errno;
 #ifndef VMS
 #ifndef NeXT
 #ifndef THINK_C
+#ifndef __linux__
 extern __const char *__const sys_errlist[];
 extern int sys_nerr;
+#endif	/* linux */
 #endif  /* think c */
 #endif	/* NeXT */
 #endif  /* VMS */
@@ -139,12 +141,12 @@ PUBLIC CONST char * HTErrnoString NOARGS
 #define ER_NO_TRANS_DONE
 #endif
 
-#if defined(NeXT) || defined(THINK_C)
+#if defined(NeXT) || defined(THINK_C) || defined(__linux__)
     return strerror(errno);
 #define ER_NO_TRANS_DONE
 #endif
 
-#ifndef ER_NO_TRANS_DONE
+#if !defined(ER_NO_TRANS_DONE) && !defined(__linux__)
     return (errno < sys_nerr ? sys_errlist[errno] : "Unknown error");
 #endif
 
