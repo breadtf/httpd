@@ -26,7 +26,7 @@ make install
 Once finished, there will be a `httpd.deb` file you can install on any 64-bit Debian system.
 
 ## Contributions
-We would love to have contributions to anything in this repo (Yes, even the source code)
+We would love to have contributions to anything in this repo (Yes, even the source code!)
 
 I will not be making any major changes myself (except for package updates and version bumps), but you're free to open PRs and Issues.
 
