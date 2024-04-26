@@ -6,4 +6,4 @@ RestartSec=1
 User=joe
 ExecStart=/usr/bin/httpd
 [Install]
-WantedBy=networking.target
+WantedBy=multi-user.target
