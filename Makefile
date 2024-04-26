@@ -22,6 +22,8 @@ clobber: clean
 	rm -f Daemon/[a-z0-9]*/htadm
 	rm -f Daemon/[a-z0-9]*/cgiparse
 	rm -f Daemon/[a-z0-9]*/cgiutils
+	rm -rf Daemon/linux/
+	rm -rf Library/linux/
 	rm -rf httpd/usr
 	rm -rf httpd/etc
 	rm httpd.deb

@@ -5,5 +5,5 @@ touch /var/www/html/index.html
 echo "<h1>Hello, World!</h1>
 <p>This is the default page for CERN httpd for Debian.</p>
 <p>This file is stored in /var/www/html, head there to modify this page.</p>
-<p>httpd for Debian created by <a href=\"https://github.com/breadtf\">BreadTF</a>. CERN httpd copyrig</p>" > /var/www/html/index.html
+<p>httpd for Debian created by <a href=\"https://github.com/breadtf\">BreadTF</a>. httpd Copyright CERN 1994</p>" > /var/www/html/index.html
 echo "Run \`systemctl enable --now httpd\` to enable the systemd service."
