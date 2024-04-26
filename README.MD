@@ -19,5 +19,9 @@ make install
 ```
 Once finished, there will be a `httpd.deb` file you can install on any 64-bit Debian system.
 
+## Contributions
+We would love to have contributions to anything in this repo (Yes, even the source code)
+I wont *personally* be making any major changes, but you're free to open PRs and Issues.
+
 ## Licence
 W3C httpd is covered by the [MIT Copyright Statement](COPYRIGHT), and with acknowledgement to [CERN](CERN)
