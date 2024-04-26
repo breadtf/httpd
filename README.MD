@@ -12,6 +12,11 @@ Head to the releases page and download `httpd.deb`.
 Once installed, run `systemctl enable --now httpd` to start httpd on boot,
 Or run `httpd -v -p 8080` for testing.
 
+## Configuration
+The config file is located in `/etc/httpd.conf`.
+
+> I'm not aware of any good sources for configuration options, so please create an Issue/PR if you find a good source to link
+
 ## Building
 Building is as simple as running these two commands
 ```
