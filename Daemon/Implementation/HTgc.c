@@ -12,7 +12,9 @@
 **
 **
 */
-
+#ifdef __linux__
+#include <time.h>
+#endif
 #include <string.h>
 #include <stdio.h>
 #ifdef VMS

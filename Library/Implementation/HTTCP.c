@@ -128,6 +128,9 @@ extern int sys_nerr;
 
 #endif	/* PCNFS */
 
+#ifdef __linux__
+#include <time.h>
+#endif
 
 /*
  *	Returns the string equivalent of the current errno.

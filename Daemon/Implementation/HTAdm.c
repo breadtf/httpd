@@ -50,7 +50,9 @@
 ** BUGS:
 **
 */
-
+#ifdef __linux__
+#include <time.h>
+#endif
 #include "tcp.h"
 
 #ifdef VMS

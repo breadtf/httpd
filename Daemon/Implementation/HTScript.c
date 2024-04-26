@@ -49,6 +49,10 @@
 #include <stdio.h>
 #include <time.h>
 
+#ifdef __linux__
+#include <sys/wait.h>
+#endif
+
 #ifdef Mips
 #include <sys/wait.h>
 #endif

@@ -48,6 +48,10 @@
 #include "HTTee.h"
 #include "HTError.h"
 
+#ifdef __linux__
+#include <time.h>
+#endif
+
 /* These flags may be set to modify the operation of this module */
 PUBLIC char * HTCacheDir = NULL;  /* Root for cached files or 0 for no cache */
 PUBLIC char * HTSaveLocallyDir = SAVE_LOCALLY_HOME_DIR;	 /* Save & exe files */

@@ -22,6 +22,9 @@
 **
 */
 
+#ifdef __linux__
+#include <time.h>
+#endif
 
 #ifdef VMS
 typedef unsigned long mode_t;
