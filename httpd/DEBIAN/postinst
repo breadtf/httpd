@@ -2,8 +2,17 @@
 
 mkdir -p /var/www/html
 touch /var/www/html/index.html
-echo "<h1>Hello, World!</h1>
-<p>This is the default page for CERN httpd for Debian.</p>
-<p>This file is stored in /var/www/html, head there to modify this page.</p>
-<p>httpd for Debian created by <a href=\"https://github.com/breadtf\">BreadTF</a>. httpd Copyright CERN 1994</p>" > /var/www/html/index.html
-echo "Run \`systemctl enable --now httpd\` to enable the systemd service."
+echo "<title>Welcome to" `hostname`" W3 server</title>" >/var/www/html/index.html
+echo "<h1>Welcome to" `hostname` "</h1>" >>/var/www/html/index.html
+echo "This server has just been installed, and no local
+data is currently available. Edit me!
+Watch this space...
+<h2>Information elsewhere</h2>
+For other information,
+<a href=\"http://info.cern.ch/\">select this link</a>.
+<p>
+<address>Server Manager<address>" >> /var/www/html/index.html
+
+sudo systemctl enable --now httpd
+
+
