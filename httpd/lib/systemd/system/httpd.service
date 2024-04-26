@@ -1,0 +1,9 @@
+[Unit]
+Description=CERN httpd
+[Service]
+Type=Simple
+RestartSec=1
+User=joe
+ExecStart=/usr/bin/httpd
+[Install]
+WantedBy=networking.target

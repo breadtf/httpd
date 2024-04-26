@@ -1,0 +1,5 @@
+Package: httpd
+Version: 3.0A
+Maintainer: BreadTF
+Architecture: all
+Description: Debian package for CERN httpd
