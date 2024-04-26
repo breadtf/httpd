@@ -137,6 +137,7 @@ PUBLIC void HTFileInit NOARGS
     HTAddType(".sv4crc", "application/x-sv4crc",	"binary", 1.0);	/* SVR4 CPIO with CRC	*/
     HTAddType(".tar",    "application/x-tar",		"binary", 1.0);	/* 4.3BSD tar		*/
     HTAddType(".ustar",  "application/x-ustar",		"binary", 1.0);	/* POSIX tar		*/
+    HTAddType(".json",   "application/json",		"8bit",   1.0);	/* JSON			*/
     HTAddType(".snd",    "audio/basic",			"binary", 1.0);	/* Audio		*/
     HTAddType(".au",     "audio/basic",			"binary", 1.0);
     HTAddType(".aiff",   "audio/x-aiff",		"binary", 1.0);
@@ -162,7 +163,10 @@ PUBLIC void HTFileInit NOARGS
     HTAddType(".xbm",    "image/x-xbitmap",		"binary", 1.0);	/* X bitmap		*/
     HTAddType(".xpm",    "image/x-xpixmap",		"binary", 1.0);	/* X pixmap format	*/
     HTAddType(".xwd",    "image/x-xwindowdump",		"binary", 1.0);	/* X window dump (xwd)	*/
+    HTAddType(".svg",    "image/svg+xml",		"8bit",   1.0);	/* SVG			*/
     HTAddType(".html",   "text/html",			"8bit",   1.0);	/* HTML			*/
+    HTAddType(".js",     "text/javascript",		"8bit",   1.0);	/* JavaScript		*/
+    HTAddType(".css",    "text/css",			"8bit",   1.0);	/* CSS			*/
     HTAddType(".c",      "text/plain",			"7bit",   0.5);	/* C source		*/
     HTAddType(".h",      "text/plain",			"7bit",   0.5);	/* C headers		*/
     HTAddType(".C",      "text/plain",			"7bit",   0.5);	/* C++ source		*/
