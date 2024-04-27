@@ -14,6 +14,12 @@ if [ ! -f /var/www/html/index.html ]; then
   <p>
   <address>Server Manager<address>" >> /var/www/html/index.html
 fi
-sudo systemctl enable --now httpd
+
+# Check to see if we're booted with systemd.
+# Some systems that are not booted with systemd will error here.
+# (Docker, WSL, Codespaces, etc.)
+if systemctl &> /dev/null; then
+  sudo systemctl enable --now httpd
+fi
 
 
