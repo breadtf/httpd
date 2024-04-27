@@ -10,6 +10,10 @@
 */
 
 #include "HTAlert.h"
+#ifdef __linux__
+#include <string.h>
+#include <unistd.h>
+#endif
 
 PUBLIC BOOL HTInteractive=YES;		    /* Any prompts from the Library? */
 

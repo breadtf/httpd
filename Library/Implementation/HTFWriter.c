@@ -20,6 +20,9 @@
 #define L_tmpnam 64
 #endif
 
+#ifdef __linux__
+#include <time.h>
+#endif
 
 /*		Stream Object
 **		------------

@@ -16,7 +16,9 @@
 **
 **
 */
-
+#ifdef __linux__
+#include <time.h>
+#endif
 #ifdef VMS
 #define __TYPES
 #include <types.h>
