@@ -1,8 +1,8 @@
-# HTTPD for Debian
-This is a modified version of HTTPD, packaged for Debian.
+# MEOW HTTPD
+The perfect HTTP/1.0 server for silly goobers (like you)
 
 ## SECURITY WARNING
-This version of HTTPD is from 1994, and will obviously not support any modern HTTP features (HTTP/1.1+, Content Negotation, etc.) and will have countless security issues and exploits.
+MEOW HTTPD is based on CERN HTTPD from 1994, and will obviously not support any modern HTTP features (HTTP/1.1+, Content Negotation, etc.) and will have countless security issues and exploits.
 
 I would recommened using NGINX as a reverse proxy in-front of this server, with Fail2Ban configured very strictly to prevent any chance of exploits reaching the server.
 
@@ -31,4 +31,4 @@ We would love to have contributions to anything in this repo (Yes, even the sour
 I will not be making any major changes myself (except for package updates and version bumps), but you're free to open PRs and Issues.
 
 ## Licence
-W3C httpd is covered by the [MIT Copyright Statement](COPYRIGHT), and with acknowledgement to [CERN](CERN)
+MEOW HTTPD is covered by the [MIT Copyright Statement](COPYRIGHT), and with acknowledgement to [CERN](CERN)

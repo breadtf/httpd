@@ -232,7 +232,7 @@ PRIVATE int script_pid = 0;
 /*      Program-Global Variables
 **      ------------------------
 */
-PUBLIC char * HTAppName = "CERN-HTTPD"; /* Application name             */
+PUBLIC char * HTAppName = "MEOW-HTTPD"; /* Application name             */
 PUBLIC char * HTAppVersion = VD;        /* Application version          */
 
 PUBLIC char * HTClientProtocol = 0;     /* Protocol and version number  */
@@ -2925,7 +2925,7 @@ PUBLIC int main ARGS2 (int,     argc,
 
             } else if (0==strcmp(argv[a], "-version")) {
 		printf("\n\nW3C Reference Software\n\n");
-		printf("\tW3C HTTPD version %s.\n", HTAppVersion);
+		printf("\tMEOW HTTPD version %s.\n", HTAppVersion);
 		printf("\tW3C Reference Library version %s.\n\n", HTLibraryVersion);
                 exit(0);
 
