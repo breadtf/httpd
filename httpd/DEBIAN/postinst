@@ -1,18 +1,19 @@
 #!/bin/bash
 
 mkdir -p /var/www/html
-touch /var/www/html/index.html
-echo "<title>Welcome to" `hostname`" W3 server</title>" >/var/www/html/index.html
-echo "<h1>Welcome to" `hostname` "</h1>" >>/var/www/html/index.html
-echo "This server has just been installed, and no local
-data is currently available. Edit me!
-Watch this space...
-<h2>Information elsewhere</h2>
-For other information,
-<a href=\"http://info.cern.ch/\">select this link</a>.
-<p>
-<address>Server Manager<address>" >> /var/www/html/index.html
-
+if [ ! -f /var/www/html/index.html ]; then
+  touch /var/www/html/index.html
+  echo "<title>Welcome to" `hostname`" W3 server</title>" >/var/www/html/index.html
+  echo "<h1>Welcome to" `hostname` "</h1>" >>/var/www/html/index.html
+  echo "This server has just been installed, and no local
+  data is currently available. Edit me!
+  Watch this space...
+  <h2>Information elsewhere</h2>
+  For other information,
+  <a href=\"http://info.cern.ch/\">select this link</a>.
+  <p>
+  <address>Server Manager<address>" >> /var/www/html/index.html
+fi
 sudo systemctl enable --now httpd
 
 
