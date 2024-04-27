@@ -15,7 +15,7 @@ Or run `httpd -v -p 8080` for testing.
 ## Configuration
 The config file is located in `/etc/httpd.conf`.
 
-A full list of all options can be found [here](https://github.com/breadtf/httpd/blob/main/server_root/config/all.conf) or [here](https://www.w3.org/Daemon/User/Config/Overview.html).
+A full list of all options can be found [all.conf](https://github.com/breadtf/httpd/blob/main/server_root/config/all.conf) or [on the W3C HTTPD Website](https://www.w3.org/Daemon/User/Config/Overview.html).
 
 ## Building
 Building is as simple as running these two commands
