@@ -33,7 +33,7 @@ package: all
 	rm -rf httpd/etc
 	mkdir -p httpd/usr/bin
 	cp Daemon/linux/htimage httpd/usr/bin/htimage
-	cp Daemon/linux/httpd_3.1 httpd/usr/bin/httpd
+	cp Daemon/linux/httpd_* httpd/usr/bin/httpd
 	cp Daemon/linux/htadm httpd/usr/bin/htadm
 	cp Daemon/linux/cgiutils httpd/usr/bin/cgiutils
 	cp Daemon/linux/cgiparse httpd/usr/bin/cgiparse
