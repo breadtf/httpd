@@ -2,7 +2,7 @@
 The perfect HTTP/1.0 server for silly goobers (like you)
 
 ## SECURITY WARNING
-MEOW HTTPD is based on CERN HTTPD from 1994, and will obviously not support any modern HTTP features (HTTP/1.1+, Content Negotation, etc.) and will have countless security issues and exploits.
+MEOW HTTPD is based on CERN HTTPD from 1996, and will obviously not support any modern HTTP features (HTTP/1.1+, Content Negotation, etc.) and will have countless security issues and exploits.
 
 I would recommened using NGINX as a reverse proxy in-front of this server, with Fail2Ban configured very strictly to prevent any chance of exploits reaching the server.
 
