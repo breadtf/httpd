@@ -141,7 +141,7 @@ PUBLIC void HTFileInit NOARGS
     HTAddType(".tiff",   "image/tiff",			"binary", 1.0);
     HTAddType(".ras",    "image/cmu-raster",		"binary", 1.0);
     HTAddType(".png",    "image/png",			"binary", 1.0);	/* PNG image format	*/
-    HTAddType(".png",    "image/svg+xml",		"binary", 1.0);	/* SVG image format	*/
+    HTAddType(".svg",    "image/svg+xml",		"binary", 1.0);	/* SVG image format	*/
     HTAddType(".pnm",    "image/x-portable-anymap",	"binary", 1.0);	/* PBM Anymap format	*/
     HTAddType(".pbm",    "image/x-portable-bitmap",	"binary", 1.0);	/* PBM Bitmap format	*/
     HTAddType(".pgm",    "image/x-portable-graymap",	"binary", 1.0);	/* PBM Graymap format	*/
